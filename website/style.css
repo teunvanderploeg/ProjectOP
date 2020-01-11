@@ -1,0 +1,407 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto auto;
+
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 3em;
+  margin-right: 1em;
+  padding-top: 10px;
+}
+
+.menu a:hover {
+  color: magenta;
+}
+.Aanmelden {
+  background-color: rgb(212, 0, 212);
+  padding: 10px;
+  color: black;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 1s infinite;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(225, 0, 255, 0.5);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 0 5px rgba(225, 0, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(225, 0, 255, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(225, 0, 255, 0.2);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 15px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 0 0 10px rgba(225, 0, 255, 0.5);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 0, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 255, 0.1);
+  }
+}
+.Aanmelden:hover {
+  background-color: rgba(255, 49, 255, 0.445);
+}
+.logo {
+  text-align: left;
+  height: 1em;
+  width: 250px;
+  color: magenta;
+  font-family: Arial;
+}
+#Home {
+  width: auto;
+  height: 971px;
+  background-color: black;
+  background-image: none;
+  color: white;
+}
+#Home h1 {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 5em;
+}
+.magentaM {
+  display: inline;
+  color: magenta;
+}
+.computer_media {
+  width: 100%;
+  height: 61em;
+}
+.opleidinggrid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+}
+.opleidingtext {
+  padding-left: 3em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  color: black;
+  background-color: rgba(255, 0, 255, 0.76);
+  margin-top: 10em;
+  margin-bottom: 10em;
+  border-radius: 25px;
+  padding-right: 2em;
+  border-style: solid;
+  font-family: akzidenz-grotesk, helvetica, arial, sans-serif;
+}
+.opleidingtextleren {
+  padding-left: 3em;
+  text-align: center;
+  padding-top: 0;
+  color: black;
+  background-color: rgba(255, 0, 255, 0.76);
+  border-radius: 25px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-right: 2em;
+  border-style: solid;
+  font-family: akzidenz-grotesk, helvetica, arial, sans-serif;
+}
+.opleidingtextnama {
+  padding-left: 3em;
+  text-align: center;
+  padding-top: 0;
+  color: black;
+  background-color: rgba(255, 0, 255, 0.76);
+  border-radius: 25px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-right: 2em;
+  border-style: solid;
+  font-family: akzidenz-grotesk, helvetica, arial, sans-serif;
+}
+.opleidingimgvak {
+  text-align: center;
+  padding-top: 10em;
+  color: white;
+}
+.opleidingimg {
+  width: 90%;
+  border-radius: 35px;
+}
+h3 {
+  font-family: Arial;
+}
+
+#Opleiding {
+  width: auto;
+  height: 1080px;
+  background-color: rgb(48, 48, 48);
+  background-image: linear-gradient(black, gray);
+}
+
+#Benodigdheden {
+  width: auto;
+  height: 1080px;
+  background-color: rgb(66, 66, 66);
+  background-image: linear-gradient(gray, white);
+}
+.benodigdhedengrid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.benodigdhedenimgvak {
+  text-align: center;
+  padding-top: 40%;
+}
+.benodigdhedenimg {
+  width: 90%;
+  border-radius: 35px;
+  padding-top: 10%;
+}
+.benodighedentext {
+  text-align: center;
+  padding-top: 20%;
+  color: black;
+}
+.benodighedentext li {
+  font-family: Arial;
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+}
+.benodighedentext li:last-child {
+  border: none;
+}
+.benodighedentext li a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.benodighedentext li a:hover {
+  font-size: 40px;
+  background: rgba(255, 0, 255, 0.3);
+}
+#Filmpje {
+  width: auto;
+  height: 1080px;
+  background-color: white;
+}
+.filmpjegrid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto;
+}
+.filmpjeimg {
+  text-align: center;
+  padding: 5em;
+  color: black;
+  background-color: rgba(255, 0, 255, 0.7);
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-right: 20%;
+  border-radius: 25px;
+  border-style: solid;
+}
+.filmpjefilm {
+  border-style: solid;
+}
+.filmpjetext {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 20em;
+  color: black;
+}
+#Student {
+  width: auto;
+  height: 1080px;
+  background-color: white;
+}
+.studentgrid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.studentimg {
+  text-align: center;
+  padding-top: 3em;
+}
+.studentimgimg {
+  text-align: center;
+}
+.studenttext {
+  text-align: center;
+  padding-top: 1em;
+  color: black;
+  background-color: rgba(255, 0, 255, 0.8);
+  border-radius: 35px;
+  margin: 10em;
+  border-style: solid;
+}
+.studenttextgrid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.studenttextgrid a {
+}
+.studenttexttext {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 3em;
+  padding: 1em;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+}
+.studenttexttexttop {
+  padding-top: 1em;
+  font-size: 3em;
+}
+#Aanmelden {
+  width: auto;
+  height: 900px;
+  background-color: white;
+}
+.aanmeldgrid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto;
+}
+.aanmeldtext {
+  padding: 5em;
+  width: auto;
+  height: 5em;
+}
+.aanmeldform {
+  text-align: left;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin: 5em;
+  background-color: rgba(255, 0, 255, 0.7);
+  border-radius: 25px;
+  border-style: solid;
+}
+.aanmeldform form {
+  margin-left: 10%;
+}
+.aanmeldform label {
+  color: white;
+}
+.inputname {
+  font-family: inherit;
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 1.5em;
+  color: white;
+  padding: 5px 5px;
+  background: transparent;
+}
+.inputmail {
+  font-family: inherit;
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 1.5em;
+  color: white;
+  padding: 5px 5px;
+  background: transparent;
+}
+.inputleeftijd {
+  background-color: white;
+  color: black;
+  border: 0;
+  width: 5em;
+  margin-top: 5px;
+}
+.inputsupmit {
+  width: 15em;
+  height: 3em;
+  border-radius: 15px;
+  border: 0;
+  background-color: rgb(156, 0, 156);
+  color: white;
+}
+.supmit:hover {
+  background-color: rgb(212, 0, 212);
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  text-align: center;
+}
+.footer p {
+  color: white;
+}
+@media screen and (max-width: 40em) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .computer_media {
+    height: 10em;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .opleidinggrid {
+    grid-template-columns: 1fr;
+  }
+  .opleidingimgvak {
+    padding-top: 10em;
+  }
+  .benodigdhedengrid {
+    grid-template-columns: 1fr;
+  }
+  .benodigdhedenimgvak {
+    padding-top: 10em;
+  }
+  .studentgrid {
+    grid-template-columns: 1fr;
+  }
+  .benodigdhedenimg {
+    padding-top: 70%;
+  }
+  .aanmeldform input {
+    height: 2em;
+    width: 10em;
+  }
+}
